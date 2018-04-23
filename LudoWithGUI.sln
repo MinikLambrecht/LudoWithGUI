@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LudoWithGUI", "LudoWithGUI\LudoWithGUI.csproj", "{14DC54A4-3B8C-4D7D-8F96-DF72A20AC407}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ludo", "Ludo\Ludo.csproj", "{6AF96F87-7243-429D-A0F3-2A2DB3C19C3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ludo.Library", "Ludo.Library\Ludo.Library.csproj", "{041859D9-11F1-4834-A35B-A4F8794AA1C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{14DC54A4-3B8C-4D7D-8F96-DF72A20AC407}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{14DC54A4-3B8C-4D7D-8F96-DF72A20AC407}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{14DC54A4-3B8C-4D7D-8F96-DF72A20AC407}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{14DC54A4-3B8C-4D7D-8F96-DF72A20AC407}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AF96F87-7243-429D-A0F3-2A2DB3C19C3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AF96F87-7243-429D-A0F3-2A2DB3C19C3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AF96F87-7243-429D-A0F3-2A2DB3C19C3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AF96F87-7243-429D-A0F3-2A2DB3C19C3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{041859D9-11F1-4834-A35B-A4F8794AA1C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{041859D9-11F1-4834-A35B-A4F8794AA1C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{041859D9-11F1-4834-A35B-A4F8794AA1C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{041859D9-11F1-4834-A35B-A4F8794AA1C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
