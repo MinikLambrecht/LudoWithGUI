@@ -5,11 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ludo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="480" Width="458" ResizeMode="NoResize">
+        Title="MainWindow" Height="477" Width="635" ResizeMode="NoResize" Background="#3F000000">
     <Grid>
-        <Rectangle x:Name="field_Finish" Fill="White" HorizontalAlignment="Center" Height="90" Margin="180,180,182,181" Stroke="Black" VerticalAlignment="Center" Width="90" RenderTransformOrigin="1.2,0.6" MinWidth="90" MinHeight="90"/>
 
+        <Rectangle x:Name="field_Finished" Fill="White" HorizontalAlignment="Left" Height="90" Margin="180,180,0,0" Stroke="Black" VerticalAlignment="Top" Width="90"/>
+
+        <!--#region Red Field-->
         <Rectangle x:Name="field_RBase" Fill="Red" HorizontalAlignment="Left" Height="180" Stroke="Black" VerticalAlignment="Top" Width="180" RenderTransformOrigin="-0.44,0.14" MinWidth="180" MinHeight="180"/>
+        <Rectangle x:Name="field_RHB1" Fill="White" HorizontalAlignment="Left" Height="54" Margin="30,30,0,0" Stroke="Black" VerticalAlignment="Top" Width="55"/>
+        <Rectangle x:Name="field_RHB2" Fill="White" HorizontalAlignment="Left" Height="54" Margin="95,30,0,0" Stroke="Black" VerticalAlignment="Top" Width="55"/>
+        <Rectangle x:Name="field_RHB3" Fill="White" HorizontalAlignment="Left" Height="54" Margin="30,96,0,0" Stroke="Black" VerticalAlignment="Top" Width="55"/>
+        <Rectangle x:Name="field_RHB4" Fill="White" HorizontalAlignment="Left" Height="54" Margin="95,96,0,0" Stroke="Black" VerticalAlignment="Top" Width="55"/>
+
         <Rectangle x:Name="field_RHome1" Fill="Red" HorizontalAlignment="Left" Height="30" Margin="30,180,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="1.2,0.6" MinWidth="30" MinHeight="30"/>
         <Rectangle x:Name="field_RHome2" Fill="Red" HorizontalAlignment="Left" Height="30" Margin="30,210,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="1.2,0.6" MinWidth="30" MinHeight="30"/>
         <Rectangle x:Name="field_RHome3" Fill="Red" HorizontalAlignment="Left" Height="30" Margin="60,210,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="1.2,0.6" MinWidth="30" MinHeight="30"/>
@@ -29,8 +36,15 @@
         <Rectangle x:Name="field_R10" Fill="White" HorizontalAlignment="Left" Height="30" Margin="90,180,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="1.2,0.6" MinWidth="30" MinHeight="30"/>
         <Rectangle x:Name="field_R11" Fill="White" HorizontalAlignment="Left" Height="30" Margin="120,180,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="1.2,0.6" MinWidth="30" MinHeight="30"/>
         <Rectangle x:Name="field_R12" Fill="White" HorizontalAlignment="Left" Height="30" Margin="150,180,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="1.2,0.6" MinWidth="30" MinHeight="30"/>
-        
+        <!--#endregion-->
+
+        <!--#region Green field-->
         <Rectangle x:Name="field_GBase" Fill="Green" HorizontalAlignment="Left" Height="180" Stroke="Black" VerticalAlignment="Top" Width="180" RenderTransformOrigin="-0.44,0.14" Margin="0,269,0,0" MinWidth="180" MinHeight="180"/>
+        <Rectangle x:Name="field_GHB1" Fill="White" HorizontalAlignment="Left" Height="54" Margin="30,299,0,0" Stroke="Black" VerticalAlignment="Top" Width="55"/>
+        <Rectangle x:Name="field_GHB2" Fill="White" HorizontalAlignment="Left" Height="54" Margin="95,299,0,0" Stroke="Black" VerticalAlignment="Top" Width="55"/>
+        <Rectangle x:Name="field_GHB3" Fill="White" HorizontalAlignment="Left" Height="54" Margin="30,365,0,0" Stroke="Black" VerticalAlignment="Top" Width="55"/>
+        <Rectangle x:Name="field_GHB4" Fill="White" HorizontalAlignment="Left" Height="54" Margin="95,365,0,0" Stroke="Black" VerticalAlignment="Top" Width="55"/>
+
         <Rectangle x:Name="field_GHome1" Fill="Green" HorizontalAlignment="Left" Height="30" Margin="180,389,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" MinWidth="30" MinHeight="30"/>
         <Rectangle x:Name="field_GHome2" Fill="Green" HorizontalAlignment="Left" Height="30" Margin="210,389,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="1.2,0.6" MinWidth="30" MinHeight="30"/>
         <Rectangle x:Name="field_GHome3" Fill="Green" HorizontalAlignment="Left" Height="30" Margin="210,359,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="1.2,0.6" MinWidth="30" MinHeight="30"/>
@@ -50,8 +64,15 @@
         <Rectangle x:Name="field_G10" Fill="White" HorizontalAlignment="Left" Height="30" Margin="180,329,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" MinWidth="30" MinHeight="30"/>
         <Rectangle x:Name="field_G11" Fill="White" HorizontalAlignment="Left" Height="30" Margin="180,299,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" MinWidth="30" MinHeight="30"/>
         <Rectangle x:Name="field_G12" Fill="White" HorizontalAlignment="Left" Height="30" Margin="180,269,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" MinWidth="30" MinHeight="30"/>
-        
+        <!--#endregion-->
+
+        <!--#region Blue Field-->
         <Rectangle x:Name="field_BBase" Fill="Blue" HorizontalAlignment="Left" Height="180" Stroke="Black" VerticalAlignment="Top" Width="180" RenderTransformOrigin="-0.44,0.14" Margin="270,0,0,0" MinWidth="180" MinHeight="180"/>
+        <Rectangle x:Name="field_BHB1" Fill="White" HorizontalAlignment="Left" Height="54" Margin="300,30,0,0" Stroke="Black" VerticalAlignment="Top" Width="55"/>
+        <Rectangle x:Name="field_BHB2" Fill="White" HorizontalAlignment="Left" Height="54" Margin="365,30,0,0" Stroke="Black" VerticalAlignment="Top" Width="55"/>
+        <Rectangle x:Name="field_BHB3" Fill="White" HorizontalAlignment="Left" Height="54" Margin="300,96,0,0" Stroke="Black" VerticalAlignment="Top" Width="55"/>
+        <Rectangle x:Name="field_BHB4" Fill="White" HorizontalAlignment="Left" Height="54" Margin="365,96,0,0" Stroke="Black" VerticalAlignment="Top" Width="55"/>
+
         <Rectangle x:Name="field_BHome1" Fill="Blue" HorizontalAlignment="Left" Height="30" Margin="240,30,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="1.2,0.6" MinWidth="30" MinHeight="30"/>
         <Rectangle x:Name="field_BHome2" Fill="Blue" HorizontalAlignment="Left" Height="30" Margin="210,30,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="1.2,0.6" MinWidth="30" MinHeight="30"/>
         <Rectangle x:Name="field_BHome3" Fill="Blue" HorizontalAlignment="Left" Height="30" Margin="210,60,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="1.2,0.6" MinWidth="30" MinHeight="30"/>
@@ -71,8 +92,15 @@
         <Rectangle x:Name="field_B10" Fill="White" HorizontalAlignment="Left" Height="30" Margin="240,90,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="1.2,0.6" MinWidth="30" MinHeight="30"/>
         <Rectangle x:Name="field_B11" Fill="White" HorizontalAlignment="Left" Height="30" Margin="240,120,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="1.2,0.6" MinWidth="30" MinHeight="30"/>
         <Rectangle x:Name="field_B12" Fill="White" HorizontalAlignment="Left" Height="30" Margin="240,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="1.2,0.6" MinWidth="30" MinHeight="30"/>
+        <!--#endregion-->
 
+        <!--#region Yellow Field-->
         <Rectangle x:Name="field_YBase" Fill="Yellow" HorizontalAlignment="Left" Height="180" Stroke="Black" VerticalAlignment="Top" Width="180" RenderTransformOrigin="-0.44,0.14" Margin="270,269,0,0" MinWidth="180" MinHeight="180"/>
+        <Rectangle x:Name="field_YHB1" Fill="White" HorizontalAlignment="Left" Height="54" Margin="300,299,0,0" Stroke="Black" VerticalAlignment="Top" Width="55"/>
+        <Rectangle x:Name="field_YHB2" Fill="White" HorizontalAlignment="Left" Height="54" Margin="365,299,0,0" Stroke="Black" VerticalAlignment="Top" Width="55"/>
+        <Rectangle x:Name="field_YHB3" Fill="White" HorizontalAlignment="Left" Height="54" Margin="300,365,0,0" Stroke="Black" VerticalAlignment="Top" Width="55"/>
+        <Rectangle x:Name="field_YHB4" Fill="White" HorizontalAlignment="Left" Height="54" Margin="365,365,0,0" Stroke="Black" VerticalAlignment="Top" Width="55"/>
+
         <Rectangle x:Name="field_YHome1" Fill="Yellow" HorizontalAlignment="Left" Height="30" Margin="390,240,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="1.2,0.6" MinWidth="30" MinHeight="30"/>
         <Rectangle x:Name="field_YHome2" Fill="Yellow" HorizontalAlignment="Left" Height="30" Margin="390,210,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="1.2,0.6" MinWidth="30" MinHeight="30"/>
         <Rectangle x:Name="field_YHome3" Fill="Yellow" HorizontalAlignment="Left" Height="30" Margin="360,210,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="1.2,0.6" MinWidth="30" MinHeight="30"/>
@@ -92,6 +120,19 @@
         <Rectangle x:Name="field_Y10" Fill="White" HorizontalAlignment="Left" Height="30" Margin="330,240,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="1.2,0.6" MinWidth="30" MinHeight="30"/>
         <Rectangle x:Name="field_Y11" Fill="White" HorizontalAlignment="Left" Height="30" Margin="300,240,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" RenderTransformOrigin="1.2,0.6" MinWidth="30" MinHeight="30"/>
         <Rectangle x:Name="field_Y12" Fill="White" HorizontalAlignment="Left" Height="30" Margin="270,240,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" MinWidth="30" MinHeight="30"/>
+        <!--#endregion-->
+
+        <!--#region Labels-->
+        <Label Content="Current Player:" HorizontalAlignment="Left" Margin="450,0,0,0" VerticalAlignment="Top" Width="179" Foreground="White" HorizontalContentAlignment="Center"/>
+        <Label Content="BLUE" HorizontalAlignment="Left" Margin="450,26,0,0" VerticalAlignment="Top" Width="179" Foreground="Blue" HorizontalContentAlignment="Center" Background="#00000000" FontWeight="Bold" FontSize="24" Height="42" MinHeight="42" MinWidth="179"/>
+        <Label Content="0" HorizontalAlignment="Left" Margin="569,105,0,0" VerticalAlignment="Top" Width="50" Height="31" Foreground="Black" Background="White" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="16"/>
+        <!--#endregion-->
+
+        <!--#region Buttons & Other Functionalities-->
+        <Button Content="Roll Dice" HorizontalAlignment="Left" Margin="455,105,0,0" VerticalAlignment="Top" Width="109" Background="Black" BorderBrush="Red" Foreground="White" Height="31" FontWeight="Bold" FontSize="16"/>
+        <Button Content="New Game" HorizontalAlignment="Left" Margin="544,413,0,0" VerticalAlignment="Top" Width="75" Height="25" RenderTransformOrigin="-0.128,-4.277" Background="Black" Foreground="White" BorderBrush="Red" FontWeight="Bold"/>
+        <Button Content="Exit Game" HorizontalAlignment="Left" Margin="455,413,0,0" VerticalAlignment="Top" Width="75" Height="25" Foreground="White" BorderBrush="Red" Background="Black" FontWeight="Bold"/>
+        <!--#endregion-->
 
     </Grid>
 </Window>

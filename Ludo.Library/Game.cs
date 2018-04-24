@@ -20,11 +20,9 @@ namespace Ludo.Library
         // Create MainMenu
         private void MainMenu()
         {
-            Console.WriteLine("Welcome to Ludo");
             SetNumberOfPlayers();
             CreatePlayers();
             ShowPlayers();
-            Console.ReadKey();
         }
 
         // Set's the value for minimum and maximum players allowed
