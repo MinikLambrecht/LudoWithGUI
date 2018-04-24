@@ -14,23 +14,18 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Ludo.Library;
 
-namespace Ludo
+namespace Ludo.MainMenu
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        Dice dice = new Dice();
-
         public MainWindow()
         {
             InitializeComponent();
-        }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            dice_Result.Content = dice.ThrowDice();
+            cb_Color1.ItemsSource = Enum.GetValues(typeof(GameColor)).Cast<GameColor>();
         }
     }
 }

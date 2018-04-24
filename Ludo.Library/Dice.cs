@@ -7,12 +7,6 @@ namespace Ludo.Library
         // Field dice value
         private int diceValue;
 
-        // Constructor, throw dice
-        public Dice()
-        {
-            this.ThrowDice();
-        }
-
         // Throw dice method
         public int ThrowDice()
         {
@@ -20,12 +14,6 @@ namespace Ludo.Library
 
             this.diceValue = rnd.Next(1, 7);
 
-            return this.diceValue;
-        }
-
-        // Read dice's value
-        public int GetValue()
-        {
             return this.diceValue;
         }
     }
