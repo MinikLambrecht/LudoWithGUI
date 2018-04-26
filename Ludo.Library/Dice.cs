@@ -4,10 +4,10 @@ namespace Ludo.Library
 {
     public class Dice
     {
-        // Field dice value
+        // Class Fields
         private int diceValue;
 
-        // Throw dice method
+        // Constructor Creates A New Random Between 1 - 7 For Each Time It's Activated And Returns The Cumber
         public int ThrowDice()
         {
             Random rnd = new Random();

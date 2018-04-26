@@ -2,6 +2,15 @@
 
 namespace Ludo.Library
 {
+    // PlayerCount Enum
+    public enum PlayerCount
+    {
+        One,
+        Two,
+        Three,
+        Four
+    }
+
     public class Player
     {
         // Class fields
@@ -14,23 +23,23 @@ namespace Ludo.Library
         // Constructor
         public Player(string PlayerID, string playerName, GameColor clr)
         {
-            // Set playername in class field name
             this.PID = PlayerID;
             this.name = playerName;
             this.color = clr;
             CreateTokens(clr);
         }
 
-        // Method to create tokens
+        // Method To Create Tokens
         private void CreateTokens(GameColor clr)
         {
+            // Simple For Loop Creating A New Token As Long as I Is Less Than Or Equals To 3
             for (int i = 0; i <= 3; i++)
             {
                 this.tokens[i] = new Token(clr);
             }
         }
 
-        // Returns name
+        // Returns The Name Saved In The Class Fields
         public string GetName
         {
             get
@@ -39,7 +48,7 @@ namespace Ludo.Library
             }
         }
 
-        // Returns color
+        // Returns The Color Saved In The Class Fields
         public GameColor GetColor
         {
             get
@@ -48,7 +57,7 @@ namespace Ludo.Library
             }
         }
 
-        // Returns tokens
+        // Returns The Token Saved In The Class Fields
         public Token[] GetTokens
         {
             get
@@ -57,7 +66,7 @@ namespace Ludo.Library
             }
         }
 
-        // Returns PlayerID
+        // Returns The PlayerID Saved In the Class Fields
         public string GetID
         {
             get

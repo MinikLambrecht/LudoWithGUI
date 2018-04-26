@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ludo.Library", "Ludo.Librar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ludo", "Ludo\Ludo.csproj", "{2CA0054B-2A2C-4EB6-8DCA-F9846DBCA167}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ludo.MainMenu", "Ludo.MainMenu\Ludo.MainMenu.csproj", "{331D2741-B4BB-4BB0-97B0-A158894EED8B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{2CA0054B-2A2C-4EB6-8DCA-F9846DBCA167}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CA0054B-2A2C-4EB6-8DCA-F9846DBCA167}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CA0054B-2A2C-4EB6-8DCA-F9846DBCA167}.Release|Any CPU.Build.0 = Release|Any CPU
-		{331D2741-B4BB-4BB0-97B0-A158894EED8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{331D2741-B4BB-4BB0-97B0-A158894EED8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{331D2741-B4BB-4BB0-97B0-A158894EED8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{331D2741-B4BB-4BB0-97B0-A158894EED8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

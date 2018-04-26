@@ -1,0 +1,57 @@
+﻿<Window x:Class="Ludo.MenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ludo"
+        mc:Ignorable="d"
+        Title="Ludo - Main Menu" Height="450" Width="408" Background="Black" Foreground="White" ResizeMode="NoResize">
+    <Grid Background="Black" Margin="0,0,2,0" Width="400">
+        <Label Content="Ludo By Pyrocore" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="24" FontWeight="Bold" Foreground="White" Width="400" Height="50"/>
+
+        <!--#region Player 1-->
+        <Label Content="Player 1" HorizontalAlignment="Left" Margin="0,86,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="95" Background="Black" FontSize="15" FontWeight="Bold" Foreground="White" Height="30"/>
+        <ComboBox x:Name="cb_ColorP1" HorizontalAlignment="Left" Margin="305,86,0,0" VerticalAlignment="Top" Width="75" SelectedIndex="-1" HorizontalContentAlignment="Center" RenderTransformOrigin="0.498,0.53" Height="30" SelectionChanged="cb_ColorP1_SelectionChanged" IsEnabled="False"/>
+        <TextBox x:Name="txt_NameP1" HorizontalAlignment="Left" Height="30" Margin="100,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="16" HorizontalContentAlignment="Left" Width="200" UndoLimit="200" TextChanged="txt_NameP1_TextChanged"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="100,55,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="16" Width="200" Foreground="Red"/>
+        <Label Content="Color" HorizontalAlignment="Left" Margin="305,55,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="16" Foreground="Red" Width="75"/>
+        <!--#endregion-->
+
+        <!--#region Player 2-->
+        <Label Content="Player 2" HorizontalAlignment="Left" Margin="0,152,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="95" Background="Black" FontSize="15" FontWeight="Bold" Foreground="White" Height="30"/>
+        <ComboBox x:Name="cb_ColorP2" HorizontalAlignment="Left" Margin="305,152,0,0" VerticalAlignment="Top" Width="75" SelectedIndex="-1" HorizontalContentAlignment="Center" RenderTransformOrigin="0.498,0.53" Height="30" SelectionChanged="cb_ColorP2_SelectionChanged" IsEnabled="False"/>
+        <TextBox x:Name="txt_NameP2" HorizontalAlignment="Left" Height="30" Margin="100,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="16" HorizontalContentAlignment="Left" Width="200" UndoLimit="200" TextChanged="txt_NameP2_TextChanged"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="100,121,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="16" Width="200" Foreground="Red"/>
+        <Label Content="Color" HorizontalAlignment="Left" Margin="305,121,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="16" Foreground="Red" Width="75"/>
+        <!--#endregion-->
+
+        <!--#region Player 3-->
+        <Label Content="Player 3" HorizontalAlignment="Left" Margin="0,218,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="95" Background="Black" FontSize="15" FontWeight="Bold" Foreground="White" Height="30"/>
+        <ComboBox x:Name="cb_ColorP3" HorizontalAlignment="Left" Margin="305,218,0,0" VerticalAlignment="Top" Width="75" SelectedIndex="-1" HorizontalContentAlignment="Center" RenderTransformOrigin="0.498,0.53" Height="30" SelectionChanged="cb_ColorP3_SelectionChanged" IsEnabled="False"/>
+        <TextBox x:Name="txt_NameP3" HorizontalAlignment="Left" Height="30" Margin="100,218,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="16" HorizontalContentAlignment="Left" Width="200" UndoLimit="200" TextChanged="txt_NameP3_TextChanged"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="100,187,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="16" Width="200" Foreground="Red"/>
+        <Label Content="Color" HorizontalAlignment="Left" Margin="305,187,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="16" Foreground="Red" Width="75"/>
+        <!--#endregion-->
+
+        <!--#region Player 4-->
+        <Label Content="Player 4" HorizontalAlignment="Left" Margin="0,284,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="95" Background="Black" FontSize="15" FontWeight="Bold" Foreground="White" Height="30"/>
+        <ComboBox x:Name="cb_ColorP4" HorizontalAlignment="Left" Margin="305,284,0,0" VerticalAlignment="Top" Width="75" SelectedIndex="-1" HorizontalContentAlignment="Center" RenderTransformOrigin="0.498,0.53" Height="30" SelectionChanged="cb_ColorP4_SelectionChanged" IsEnabled="False"/>
+        <TextBox x:Name="txt_NameP4" HorizontalAlignment="Left" Height="30" Margin="100,284,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="16" HorizontalContentAlignment="Left" Width="200" UndoLimit="200" TextChanged="txt_NameP4_TextChanged"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="100,253,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="16" Width="200" Foreground="Red"/>
+        <Label Content="Color" HorizontalAlignment="Left" Margin="305,253,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="16" Foreground="Red" Width="75"/>
+        <!--#endregion-->
+
+        <!--#region Labels & Other text objects-->
+        <Label Content="Players And AI" HorizontalAlignment="Left" Margin="10,319,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="290" HorizontalContentAlignment="Center" Foreground="Red"/>
+        <Label Content="Player Count" HorizontalAlignment="Left" Margin="10,357,0,0" VerticalAlignment="Top" Foreground="Red" FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" Height="30" Width="107"/>
+        <!--#endregion-->
+
+        <!--#region Buttons & Other functionalities-->
+        <Button x:Name="btn_StartGame" Content="Start Game" HorizontalAlignment="Left" Margin="305,344,0,0" VerticalAlignment="Top" Width="85" Height="30" Background="#00DDDDDD" FontWeight="Bold" FontSize="14" BorderBrush="Red" Foreground="White" Click="btn_StartGame_Click"/>
+        <ComboBox x:Name="cb_PlayerCount" HorizontalAlignment="Left" Margin="122,357,0,0" VerticalAlignment="Top" Width="75" SelectedIndex="0" RenderTransformOrigin="0.472,0.543" Height="29" SelectionChanged="cb_PlayerCount_SelectionChanged"/>
+        <CheckBox Content="Use AI" HorizontalAlignment="Left" Margin="202,357,0,0" VerticalAlignment="Top" Height="30" FontSize="16" FontWeight="Bold" Background="White" Foreground="Red" Width="75" VerticalContentAlignment="Center"/>
+        <Button x:Name="btn_Exit" Content="Exit" HorizontalAlignment="Left" Margin="305,379,0,0" VerticalAlignment="Top" Width="85" Height="30" Background="#00DDDDDD" FontWeight="Bold" FontSize="14" BorderBrush="Red" Foreground="White" Click="btn_Exit_Click"/>
+        <!--#endregion-->
+
+    </Grid>
+</Window>

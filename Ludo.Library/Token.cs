@@ -4,7 +4,7 @@ namespace Ludo.Library
 {
     public class Token
     {
-        // Class fields
+        // Class Fields
         private GameColor color;
 
         // Constructor

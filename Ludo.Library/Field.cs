@@ -1,20 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
 
 namespace Ludo.Library
 {
+    // FieldType Enum
     public enum FieldType { Home, Safe, InPlay, Finish };
 
     public class Field
     {
+        // Class Fields
         private GameColor color;
         private int fieldId;
         private Token[] tokens = new Token[2];
 
+        // Constructor
         public Field(int id, GameColor color)
         {
             this.fieldId = id;
