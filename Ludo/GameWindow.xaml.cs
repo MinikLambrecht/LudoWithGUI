@@ -1,13 +1,19 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
+using System.Windows.Media.Imaging;
 using Ludo.Library;
 
 namespace Ludo
 {
     public partial class GameWindow : Window
     {
-        // Class Fields
-        public Player[] players = new Player[4];
+        // Class 
         Dice dice = new Dice();
+        public Player[] players = new Player[4];
+        BitmapImage RedPiece = new BitmapImage(new Uri(@"\resources\redpiece.png", UriKind.Relative));
+        BitmapImage GreenPiece = new BitmapImage(new Uri(@"\resources\greenpiece.png", UriKind.Relative));
+        BitmapImage BluePiece = new BitmapImage(new Uri(@"\resources\bluepiece.png", UriKind.Relative));
+        BitmapImage YellowPiece = new BitmapImage(new Uri(@"\resources\yellowpiece.png", UriKind.Relative));
 
         // Constructor
         public GameWindow()
@@ -18,7 +24,10 @@ namespace Ludo
         // Button Click Event
         private void btn_RollDice_Click(object sender, RoutedEventArgs e)
         {
-            dice_Result.Content = dice.ThrowDice();
+            for (int i = 0; i < 7; i++)
+            {
+                dice_Result.Content = dice.DiceThrow;
+            }            
         }
 
         // Button Click Event

@@ -106,5 +106,13 @@
       <Name>Ludo.Library</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\BluePiece.png" />
+    <Resource Include="resources\GreenPiece.png" />
+    <Resource Include="resources\YellowPiece.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="resources\RedPiece.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

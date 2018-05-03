@@ -2,19 +2,22 @@
 
 namespace Ludo.Library
 {
-    public class Dice
+    public class Dice : Game
     {
         // Class Fields
         private int diceValue;
 
-        // Constructor Creates A New Random Between 1 - 7 For Each Time It's Activated And Returns The Cumber
-        public int ThrowDice()
+        // Derrived Int Creates A New Random Between 1 - 7 For Each Time It's Activated And Returns The Cumber
+        public override int DiceThrow
         {
-            Random rnd = new Random();
+            get
+            {
+                Random rnd = new Random();
 
-            this.diceValue = rnd.Next(1, 7);
+                this.diceValue = rnd.Next(1, 7);
 
-            return this.diceValue;
+                return this.diceValue;
+            }
         }
     }
 }

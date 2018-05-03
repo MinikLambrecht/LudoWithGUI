@@ -41,15 +41,27 @@ namespace Ludo
         {
             GameWindow gameWindow = new GameWindow();
             BrushConverter conv = new BrushConverter();
+            
             // Utilizing The CreatePlayers Method To Populate The Playerslots In The Game, Either with Real Life Players Or AI
             CreatePlayers();
 
             //TestCreatePlayers();
 
-            SolidColorBrush p1_clr = conv.ConvertFromString(players[0].GetColor.ToString()) as SolidColorBrush;
-            SolidColorBrush p2_clr = conv.ConvertFromString(players[1].GetColor.ToString()) as SolidColorBrush;
-            SolidColorBrush p3_clr = conv.ConvertFromString(players[2].GetColor.ToString()) as SolidColorBrush;
-            SolidColorBrush p4_clr = conv.ConvertFromString(players[3].GetColor.ToString()) as SolidColorBrush;
+            var clr1 = (Color)ColorConverter.ConvertFromString(players[0].GetColor.ToString());
+            var clr2 = (Color)ColorConverter.ConvertFromString(players[1].GetColor.ToString());
+            var clr3 = (Color)ColorConverter.ConvertFromString(players[2].GetColor.ToString());
+            var clr4 = (Color)ColorConverter.ConvertFromString(players[3].GetColor.ToString());
+            MessageBox.Show("test1: " + clr1 + "\n"
+                          + "test2: " + clr2 + "\n"
+                          + "test3: " + clr3 + "\n"
+                          + "test4: " + clr4);
+            
+            Brush p1_clr = new SolidColorBrush(clr1);
+            Brush p2_clr = new SolidColorBrush(clr2);
+            Brush p3_clr = new SolidColorBrush(clr3);
+            Brush p4_clr = new SolidColorBrush(clr4);
+
+            TestColors(p1_clr, p2_clr, p3_clr, p4_clr);
 
             gameWindow.lbl_PlayerOne.Content = players[0].GetName;
             gameWindow.lbl_PlayerOne.Foreground = p1_clr;
@@ -65,6 +77,30 @@ namespace Ludo
 
             this.Close();
             gameWindow.ShowDialog();
+        }
+
+        private void TestColors(Brush p1, Brush p2, Brush p3, Brush p4)
+        {
+            var clr1 = (Color)ColorConverter.ConvertFromString(players[0].GetColor.ToString());
+            var clr2 = (Color)ColorConverter.ConvertFromString(players[1].GetColor.ToString());
+            var clr3 = (Color)ColorConverter.ConvertFromString(players[2].GetColor.ToString());
+            var clr4 = (Color)ColorConverter.ConvertFromString(players[3].GetColor.ToString());
+
+            Brush p1_clr = new SolidColorBrush(clr1);
+            Brush p2_clr = new SolidColorBrush(clr2);
+            Brush p3_clr = new SolidColorBrush(clr3);
+            Brush p4_clr = new SolidColorBrush(clr4);
+
+            string testcl1 = p1.ToString();
+            string testcl2 = p2.ToString();
+            string testcl3 = p3.ToString();
+            string testcl4 = p4.ToString();
+
+            MessageBox.Show("P1 Clr: " + p1 + "\n" +
+                            "P2 Clr: " + p2 + "\n" + 
+                            "P3 Clr: " + p3 + "\n" + 
+                            "P4 Clr: " + p4);
+
         }
 
         // ComboBox Selection Change Event

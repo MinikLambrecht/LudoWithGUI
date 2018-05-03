@@ -5,14 +5,8 @@ namespace Ludo.Library
     // Color Enum
     public enum GameColor { Yellow, Blue, Red, Green };
 
-    public class Game
+    public abstract class Game
     {
-        // Constructor
-        public Game()
-        {
-            
-        }
-
-        
+        public abstract int DiceThrow { get; }
     }
 }
