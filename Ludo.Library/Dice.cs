@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography;
 
 namespace Ludo.Library
 {
@@ -6,15 +7,14 @@ namespace Ludo.Library
     {
         // Class Fields
         private int diceValue;
+        CryptoRandom rng = new CryptoRandom();
 
         // Derrived Int Creates A New Random Between 1 - 7 For Each Time It's Activated And Returns The Cumber
         public override int DiceThrow
         {
             get
             {
-                Random rnd = new Random();
-
-                this.diceValue = rnd.Next(1, 7);
+                this.diceValue = rng.Next(1,7);
 
                 return this.diceValue;
             }

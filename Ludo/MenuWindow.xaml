@@ -3,9 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Ludo"
+        xmlns:l="clr-namespace:Ludo"
+        xmlns:ll1="clr-namespace:Ludo.Library;assembly=Ludo.Library"
         mc:Ignorable="d"
         Title="Ludo - Main Menu" Height="450" Width="408" Background="Black" Foreground="White" ResizeMode="NoResize">
+
+    <Window.Resources>
+        <ll1:EnumToBooleanConverter x:Key="EnumToBooleanConverter" />
+    </Window.Resources>
     <Grid Background="Black" Margin="0,0,2,0" Width="400">
         <Label Content="Ludo By Pyrocore" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="24" FontWeight="Bold" Foreground="White" Width="400" Height="50"/>
 
@@ -42,15 +47,18 @@
         <!--#endregion-->
 
         <!--#region Labels & Other text objects-->
-        <Label Content="Players And AI" HorizontalAlignment="Left" Margin="10,319,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="290" HorizontalContentAlignment="Center" Foreground="Red"/>
-        <Label Content="Player Count" HorizontalAlignment="Left" Margin="10,357,0,0" VerticalAlignment="Top" Foreground="Red" FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" Height="30" Width="107"/>
+        <Label Content="Players And AI" HorizontalAlignment="Left" Margin="155,319,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Width="145" HorizontalContentAlignment="Center" Foreground="Red"/>
+        <Label Content="Player Count" HorizontalAlignment="Left" Margin="10,322,0,0" VerticalAlignment="Top" Foreground="Red" FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" Height="30" Width="145"/>
         <!--#endregion-->
 
         <!--#region Buttons & Other functionalities-->
         <Button x:Name="btn_StartGame" Content="Start Game" HorizontalAlignment="Left" Margin="305,344,0,0" VerticalAlignment="Top" Width="85" Height="30" Background="#00DDDDDD" FontWeight="Bold" FontSize="14" BorderBrush="Red" Foreground="White" Click="btn_StartGame_Click"/>
-        <ComboBox x:Name="cb_PlayerCount" HorizontalAlignment="Left" Margin="122,357,0,0" VerticalAlignment="Top" Width="75" SelectedIndex="0" RenderTransformOrigin="0.472,0.543" Height="29" SelectionChanged="cb_PlayerCount_SelectionChanged"/>
         <CheckBox Content="Use AI" HorizontalAlignment="Left" Margin="202,357,0,0" VerticalAlignment="Top" Height="30" FontSize="16" FontWeight="Bold" Background="White" Foreground="Red" Width="75" VerticalContentAlignment="Center"/>
         <Button x:Name="btn_Exit" Content="Exit" HorizontalAlignment="Left" Margin="305,379,0,0" VerticalAlignment="Top" Width="85" Height="30" Background="#00DDDDDD" FontWeight="Bold" FontSize="14" BorderBrush="Red" Foreground="White" Click="btn_Exit_Click"/>
+        <RadioButton x:Name="rb_One" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource {x:Type ToggleButton}}" Width="30" Height="30" FontFamily="Verdana" FontWeight="Bold" Margin="10,359,0,0" GroupName="PlayerCount" IsChecked="{Binding Path=PlayerCount, Converter={StaticResource EnumToBooleanConverter}, ConverterParameter={x:Static ll:EnumToBooleanConverter.One}}"/>
+        <RadioButton x:Name="rb_Two" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource {x:Type ToggleButton}}" Width="30" Height="30" FontFamily="Verdana" FontWeight="Bold" Margin="45,359,0,0" GroupName="PlayerCount"/>
+        <RadioButton x:Name="rb_Three" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource {x:Type ToggleButton}}" Width="30" Height="30" FontFamily="Verdana" FontWeight="Bold" Margin="80,359,0,0" GroupName="PlayerCount"/>
+        <RadioButton x:Name="rb_Four" Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Style="{StaticResource {x:Type ToggleButton}}" Width="30" Height="30" FontFamily="Verdana" FontWeight="Bold" Margin="115,359,0,0" GroupName="PlayerCount"/>
         <!--#endregion-->
 
     </Grid>
